@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Monster's Rolodex
+
+A simple React Web App which uses an API to show the images, and use a search filter to showcase Reacts' Virtual DOM.
+
 
 ## Available Scripts
 
