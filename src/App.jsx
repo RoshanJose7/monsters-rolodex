@@ -32,8 +32,7 @@ function App() {
     <div className="App">
       <SearchBox
         setSearchField={setSearchField}
-        placeholder="Search Monsters"
-        onChange={(e) => console.log(e.target.value)}
+        placeHolder="Search Monsters"
       />
       <CardList monsters={filteredMonsters} />
     </div>
