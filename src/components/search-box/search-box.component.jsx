@@ -1,7 +1,7 @@
 import React from "react";
 import "./search-box.styles.css";
 
-function SearchBox({ setSearchField, placeHolder, handlechange }) {
+function SearchBox({ setSearchField, placeHolder }) {
   return (
     <input
       className="search"
