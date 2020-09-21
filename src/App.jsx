@@ -22,12 +22,13 @@ function App() {
     if (monster.name) {
       return monster.name.toLowerCase().includes(searchField.toLowerCase());
     } else {
-      return (monster.name = "");
+      return console.log("Undefined Name");
     }
   });
 
   return (
     <div className="App">
+      <h1>Monsters Rolodex</h1>
       <SearchBox
         setSearchField={setSearchField}
         placeHolder="Search Monsters"
