@@ -18,14 +18,12 @@ function App() {
       });
   }, [searchField]);
 
-  const updatedMonsters = monsters.filter((monster) => {
+  const filteredMonsters = monsters.filter((monster) => {
     if (monster.name) {
-      return monster;
+      return monster.name.toLowerCase().includes(searchField.toLowerCase());
+    } else {
+      return (monster.name = "");
     }
-  });
-
-  const filteredMonsters = updatedMonsters.filter((monster) => {
-    return monster.name.toLowerCase().includes(searchField.toLowerCase());
   });
 
   return (
